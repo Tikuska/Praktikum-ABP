@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contoh JQuery</title>
+
+<!-- Instalasi JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+// Efek hide
+$("#hide").click(function(){
+$("#teks").hide();
+});
+
+// Efek show
+$("#show").click(function(){
+$("#teks").show();
+});
+
+// Efek animasi
+$("#animasi").click(function(){
+$("#teks").fadeOut(500).fadeIn(500);
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<h2 id="teks">Belajar JQuery</h2>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="animasi">Animasi</button>
+
+</body>
+</html>
